@@ -1,0 +1,10 @@
+version: '3'
+services:
+  python3:
+    restart: always
+    build: .
+    container_name: manga_modules
+    working_dir: /work
+    tty: true
+    volumes:
+      - .:/work
